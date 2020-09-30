@@ -1,0 +1,42 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: #FFC0CB;
+  border: 1px solid black;
+  height: 100px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+[class*="col-"]{
+  border: 1px solid black;
+  height: 100%;
+}
+
+.container:last-of-type > div > .container {
+  background-color: #EF7E80;
+  /* border:5px solid #FFC0CB; */
+}
+
+.container:last-of-type > div > .container > [class*="col-"]{
+  border:1px solid white;
+}
+
+.container.xxx{
+  height: 92px;
+  width: 99%;
+  border:none;
+}
